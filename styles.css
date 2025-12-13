@@ -452,7 +452,7 @@ body::before {
 
 .aboutme {
     height: 330px;
-    background-image: url(./images/hitagi.png);
+    background-image: url(./images/hitagi.PNG);
     background-size: 430px;
     background-position-x: 200px;
     background-repeat: no-repeat;
