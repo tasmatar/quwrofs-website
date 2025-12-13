@@ -439,8 +439,8 @@ body::before {
 
 /* scrollbar */
 .aboutme1::-webkit-scrollbar { width: 10px; }
-.aboutme1::-webkit-scrollbar-track { background: #f5f5f5; cursor: url(cursors/move.cur), auto; }
-.aboutme1::-webkit-scrollbar-thumb { background:#edcfda; border-radius: 6px; cursor: url(cursors/move.cur), auto; }
+.aboutme1::-webkit-scrollbar-track { background: #f5f5f5; }
+.aboutme1::-webkit-scrollbar-thumb { background:#edcfda; border-radius: 6px; }
 
 .tab-panel {
     display: none;
