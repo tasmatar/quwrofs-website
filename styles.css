@@ -11,7 +11,7 @@
 /* links */
 a:hover {
   color: rgb(255, 187, 214);
-  cursor: url(cursors/pointer.cur), pointer;
+  cursor: url(./cursors/pointer.cur), pointer;
 }
 a {
     color:rgb(196, 132, 158);
@@ -20,7 +20,7 @@ a {
 
 body {
     scroll-behavior: smooth !important;
-    cursor: url(/cursors/default.cur), auto;
+    cursor: url(./cursors/default.cur), auto;
     background-color: #00000000;
 }
 
@@ -76,7 +76,7 @@ body::before {
     height: 370px;
     background-color: rgb(255, 255, 255, 0.3);
     margin: auto;
-    background-image: url(/images/chii.jpg);
+    background-image: url(./images/chii.jpg);
     background-size: 260px;
     background-position-x: -20px;
     background-position-y: 40px;
@@ -84,7 +84,7 @@ body::before {
     background-repeat: no-repeat;
     border-radius: 7px;
     border: 15px solid transparent;
-    border-image-source: url(/images/lace-g.png) !important;
+    border-image-source: url(./images/lace-g.png) !important;
     border-image-slice: 5 !important;
     border-image-width: 6px !important;
     border-image-repeat: round !important;
@@ -139,7 +139,7 @@ body::before {
 .wip1 {
     flex: 50%;
     margin: auto;
-    background: url(images/wingl.gif) no-repeat center;
+    background: url(./images/wingl.gif) no-repeat center;
     background-size: 70px;
     width: 70px;
     height: 60px;
@@ -149,7 +149,7 @@ body::before {
     border-radius: 30%;
     /* transition: all 0.3s ease-in-out; */
     /* margin-right: 30px; */
-    cursor: url(cursors/pointer.cur), pointer;
+    cursor: url(./cursors/pointer.cur), pointer;
     margin: auto;
     position: absolute;
     top: 50%;
@@ -183,7 +183,7 @@ body::before {
 .about {
     flex: 50%;
     margin: auto;
-    background: url(images/bow.gif) no-repeat center;
+    background: url(./images/bow.gif) no-repeat center;
     background-size: 63px;
     width: 63px;
     height: 63px;
@@ -192,7 +192,7 @@ body::before {
     padding: 0;
     /* transition: all 0.3s ease-in-out; */
     /* margin-right: 30px; */
-    cursor: url(cursors/pointer.cur), pointer;
+    cursor: url(./cursors/pointer.cur), pointer;
     margin: auto;
     position: absolute;
     top: 50%;
@@ -229,7 +229,7 @@ body::before {
 .wip2 {
     flex: 50%;
     margin: auto;
-    background: url(images/wingr.gif) no-repeat center;
+    background: url(./images/wingr.gif) no-repeat center;
     background-size: 70px;
     width: 70px;
     height: 60px;
@@ -238,7 +238,7 @@ body::before {
     padding: 0;
     border-radius: 30%;
     /* transition: all 0.3s ease-in-out; */
-    cursor: url(cursors/pointer.cur), pointer;
+    cursor: url(./cursors/pointer.cur), pointer;
     position: absolute;
     margin: auto;
     top: 50%;
@@ -317,7 +317,7 @@ body::before {
     position: relative;
     box-sizing: border-box;
     padding-right: 35px;
-    cursor: url(cursors/move.cur), move;
+    cursor: url(./cursors/move.cur), move;
 }
 
 #aboutt {
@@ -347,7 +347,7 @@ body::before {
     font-size: 14px;
     font-family: "Kosugi Maru", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: rgba(0, 0, 0, 0.415);
-    cursor: url(cursors/pointer.cur), pointer;
+    cursor: url(./cursors/pointer.cur), pointer;
 }
 
 .tab-btn:hover {
@@ -374,7 +374,7 @@ body::before {
 	border: none;
     border-top-right-radius: 9px;
     cursor: pointer;
-    cursor: url(cursors/pointer.cur), pointer;
+    cursor: url(./cursors/pointer.cur), pointer;
 }
 
 .close > p {
@@ -386,7 +386,7 @@ body::before {
 
 /* tooltip */
 .tooltip-target {
-    cursor: url(cursors/move.cur), help;
+    cursor: url(./cursors/move.cur), help;
 }
 
 .tooltip-target:hover {
@@ -427,7 +427,7 @@ body::before {
     margin-top: 6px;
     border-radius: 7px;
     border: 1px solid transparent;
-    border-image-source: url(/images/lace-g.png) !important;
+    border-image-source: url(./images/lace-g.png) !important;
     border-image-slice: 5 !important;
     border-image-width: 6px !important;
     border-image-repeat: round !important;
@@ -452,7 +452,7 @@ body::before {
 
 .aboutme {
     height: 330px;
-    background-image: url(images/hitagi.png);
+    background-image: url(./images/hitagi.png);
     background-size: 430px;
     background-position-x: 200px;
     background-repeat: no-repeat;
@@ -512,33 +512,33 @@ body::before {
 }
 
 .img1 {
-    background-image: url(images/bow.gif);
+    background-image: url(./images/bow.gif);
 }
 
 .img2 {
-    background-image: url(images/panda.gif);
+    background-image: url(./images/panda.gif);
 }
 
 .img3 {
-    background-image: url(images/cat.gif);
+    background-image: url(./images/cat.gif);
 }
 
 .img4 {
-    background-image: url(images/bubble.gif);
+    background-image: url(./images/bubble.gif);
 }
 
 .img5 {
-    background-image: url(images/wing2l.gif);
+    background-image: url(./images/wing2l.gif);
     width:25px;
 }
 
 .img6 {
-    background-image: url(images/wing2r.gif);
+    background-image: url(./images/wing2r.gif);
     width:25.2px;
 }
 
 .img7 {
-    background-image: url(images/mienshao.png);
+    background-image: url(./images/mienshao.png);
     width: 25px;
     height: 23px;
     background-size: 25px;
@@ -546,7 +546,7 @@ body::before {
 }
 
 .img8 {
-    background-image: url(images/sylveon.png);
+    background-image: url(./images/sylveon.png);
     width: 25px;
     height: 23px;
     background-size: 23px;
@@ -554,7 +554,7 @@ body::before {
 }
 
 .img9 {
-    background-image: url(images/glaceon.png);
+    background-image: url(./images/glaceon.png);
     width: 27px;
     height: 23px;
     background-size: 27px;
