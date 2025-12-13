@@ -4,6 +4,8 @@ const windowEk = document.querySelector('#Window2');
 const windowEj = document.querySelector('#Window3');
 let zCounter = 10;
 
+
+// sounds
 function closeSound() {
     var sound = document.getElementById('closesound');
     sound.play();
@@ -14,6 +16,7 @@ function clickSound() {
     sound.play();
 }
 
+// bring window to front when clicked
 function bringToFront(el) {
     zCounter += 1;
 
@@ -26,6 +29,7 @@ function bringToFront(el) {
     el.style.zIndex = zCounter;
 }
 
+// switching between tabs
 function setActiveTab(win, tabName) {
     if (!win) return;
     const tabButtons = Array.from(win.querySelectorAll('.tab-btn'));
@@ -82,6 +86,8 @@ function initWindow(win) {
     }
 }
 
+
+// draggable windows
 function makeDraggable (element) {
     // Make an element draggable (or if it has a .window-top class, drag based on the .window-top element)
     let currentPosX = 0, currentPosY = 0, previousPosX = 0, previousPosY = 0;
@@ -140,7 +146,7 @@ function elementDrag(e) {
     }
 }
 
-
+// main buttons
 const aboutBtn = document.querySelector('.about');
 if (aboutBtn && windowEl) {
     aboutBtn.addEventListener('click', () => {
@@ -175,7 +181,7 @@ windows.forEach(win => {
 });
 
 
-//Close the window on click of a red button
+// close the window on click of an x button
 document.addEventListener('click', e => {
     const win = e.target.closest('.bomboclaat');
     if (e.target.closest('.close') && win) {

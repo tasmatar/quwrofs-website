@@ -1,10 +1,28 @@
+@font-face {
+  font-family: Kosugi Maru; /* set name */
+  src: url(fonts/KosugiMaru-Regular.ttf); /* url of the font */
+}
+
+/* text selection */
+*::selection { 
+    color: #ecbdcd;
+}
+
+/* links */
+a:hover {
+  color: rgb(255, 187, 214);
+  cursor: url(cursors/pointer.cur), pointer;
+}
+a {
+    color:rgb(196, 132, 158);
+    text-decoration: none;
+}
 
 body {
     scroll-behavior: smooth !important;
     cursor: url(/cursors/default.cur), auto;
     background-color: #00000000;
 }
-
 
 /* crt effect */
 body::before {
@@ -21,26 +39,7 @@ body::before {
     pointer-events: none
 }
 
-.tooltip-target {
-    cursor: url(cursors/move.cur), help;
-}
 
-.tooltip-target:hover {
-        color: #e3b2bb;
-}
-
-.tooltip {
-    position: absolute;
-    pointer-events: none;
-    display: none;
-    background: #ffe6ef;
-    color: #00000069;
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-size: 12px;
-    z-index: 5;
-
-}
 /*--------------------------------------------------*/
 /* main box */
 .box {
@@ -71,7 +70,6 @@ body::before {
     border-style: solid;
     position: absolute;
 }
-
 
 .box1 {
     width: 535px;
@@ -118,7 +116,6 @@ body::before {
     background-color: #c1c1c1;
 }
 
-
 .tab > p {
     padding-left: 15px;
     padding-right: 15px;
@@ -127,6 +124,14 @@ body::before {
     font-family: "Kosugi Maru", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: white;
     font-weight: 500;
+}
+
+#undertxt {
+    font-size: 12px;
+    font-family: "Kosugi Maru", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.217);
+    text-align: center;
+    margin: 0;
 }
 
 /*--------------------------------------------------*/
@@ -175,8 +180,6 @@ body::before {
     display: block;
 }
 
-
-
 .about {
     flex: 50%;
     margin: auto;
@@ -206,7 +209,7 @@ body::before {
     color: white;
     border-radius: 3px;
     text-align: center;
-    width: 70px;
+    width: 80px;
     position: absolute;
     top: 68%;
     left: 50%;
@@ -296,13 +299,10 @@ body::before {
     left: 460px;
 }
 
-
-
 .window.show {
     display: block;
     pointer-events: auto;
 }
-
 
 .window-top {
     width: 535px;
@@ -320,7 +320,6 @@ body::before {
     cursor: url(cursors/move.cur), move;
 }
 
-
 #aboutt {
  font-size: 20px;
 }
@@ -333,6 +332,7 @@ body::before {
  font-size: 20px;
 }
 
+/* tab buttons */
 .tab-btn {
     flex: 0.2;
     height: 35px;
@@ -364,84 +364,6 @@ body::before {
     /* font-weight: 600; */
 }
 
-/* window animation */
-.bomboclaat.show {
-    display: block;
-    animation: popIn 0.18s cubic-bezier(0, 0.8, 0.2, 1) forwards;
-    pointer-events: auto;
-}
-@keyframes popIn {
-  0%   { transform: scale(0.01); }
-  /* 80%  { transform: scale(1.02); } */
-  100% { transform: scale(1); }
-}
-
-/* about window */
-.window-content {
-    width: 525px;
-    height: 350px;
-    margin: auto;
-    background-color: rgb(255, 255, 255);
-    margin-top: 6px;
-    background-image: url(images/hitagi.png);
-    background-size: 400px;
-    background-position-x: 225px;
-    background-repeat: no-repeat;
-    border-radius: 7px;
-    border: 1px solid transparent;
-    border-image-source: url(/images/lace-g.png) !important;
-    border-image-slice: 5 !important;
-    border-image-width: 6px !important;
-    border-image-repeat: round !important;
-    border-style: solid;
-    border-image-outset: 2px;
-    position: relative;
-	padding: 5px;
-    overflow-y:scroll;
-}
-
-.tab-panel {
-    display: none;
-}
-
-.tab-panel.active {
-    display: block;
-}
-
-.aboutme {
-	font-family: "Kosugi Maru", Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14;
-    padding-right: 180px;
-    padding-top: 80px;
-    text-align: center;
-    line-height: 1.5;
-    position: relative;
-}
-
-/* text gifs */
-.img {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-size: cover;
-    background-position: center;
-    margin: 0 4px;
-    vertical-align: middle;
-}
-
-.img1 {
-    background-image: url(images/bow.gif);
-}
-
-.img2 {
-    background-image: url(images/monkey.gif);
-}
-
-.img3 {
-    background-image: url(images/cat.gif);
-}
-
-
 /* close button */
 .close {
 	height: 35px;
@@ -461,3 +383,198 @@ body::before {
     color: rgba(0, 0, 0, 0.415);
     margin: auto;
 }
+
+/* tooltip */
+.tooltip-target {
+    cursor: url(cursors/move.cur), help;
+}
+
+.tooltip-target:hover {
+        color: #e3b2bb;
+}
+
+.tooltip {
+    position: absolute;
+    pointer-events: none;
+    display: none;
+    background: #ffe6ef;
+    color: #00000069;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    z-index: 5;
+
+}
+
+/* window animation */
+.bomboclaat.show {
+    display: block;
+    animation: popIn 0.18s cubic-bezier(0, 0.8, 0.2, 1) forwards;
+    pointer-events: auto;
+}
+@keyframes popIn {
+  0%   { transform: scale(0.01); }
+  /* 80%  { transform: scale(1.02); } */
+  100% { transform: scale(1); }
+}
+
+/* about window */
+.window-content {
+    width: 525px;
+    height: 350px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 6px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    border-image-source: url(/images/lace-g.png) !important;
+    border-image-slice: 5 !important;
+    border-image-width: 6px !important;
+    border-image-repeat: round !important;
+    border-style: solid;
+    border-image-outset: 2px;
+    position: relative;
+	padding: 5px;
+}
+
+/* scrollbar */
+.aboutme1::-webkit-scrollbar { width: 10px; }
+.aboutme1::-webkit-scrollbar-track { background: #f5f5f5; }
+.aboutme1::-webkit-scrollbar-thumb { background:#edcfda; border-radius: 6px; }
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+.aboutme {
+    height: 330px;
+    background-image: url(images/hitagi.png);
+    background-size: 430px;
+    background-position-x: 200px;
+    background-repeat: no-repeat;
+	font-family: "Kosugi Maru", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14;
+    color: #696969;
+    padding-right: 180px;
+    padding-top: 20px;
+    text-align: center;
+    line-height: 1.5;
+    position: relative;
+
+}
+.aboutme1 {
+    height: 350px;
+    background-size: 400px;
+    background-position-x: 225px;
+    background-repeat: no-repeat;
+	font-family: "Kosugi Maru", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14;
+    color: #696969;
+    padding-right: 180px;
+    text-align: center;
+    line-height: 1.5;
+    position: relative;
+    overflow-y:scroll;
+}
+
+/* .aboutme2 {
+    height: 360px;
+    background-size: 400px;
+    background-position-x: 225px;
+    background-repeat: no-repeat;
+	font-family: "Kosugi Maru", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14;
+    color: #696969;
+    padding-right: 180px;
+    text-align: center;
+    line-height: 1.5;
+    position: relative;
+} */
+
+.aboutme > h2 {
+    text-align: left;
+    padding-left: 45px;
+}
+
+/* text gifs */
+.img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 4px;
+    vertical-align: middle;
+}
+
+.img1 {
+    background-image: url(images/bow.gif);
+}
+
+.img2 {
+    background-image: url(images/panda.gif);
+}
+
+.img3 {
+    background-image: url(images/cat.gif);
+}
+
+.img4 {
+    background-image: url(images/bubble.gif);
+}
+
+.img5 {
+    background-image: url(images/wing2l.gif);
+    width:25px;
+}
+
+.img6 {
+    background-image: url(images/wing2r.gif);
+    width:25.2px;
+}
+
+.img7 {
+    background-image: url(images/mienshao.png);
+    width: 25px;
+    height: 23px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+
+.img8 {
+    background-image: url(images/sylveon.png);
+    width: 25px;
+    height: 23px;
+    background-size: 23px;
+    background-repeat: no-repeat;
+}
+
+.img9 {
+    background-image: url(images/glaceon.png);
+    width: 27px;
+    height: 23px;
+    background-size: 27px;
+    background-repeat: no-repeat;
+}
+
+/* favorites tab */
+.fav {
+    padding-left: 30px;
+    width: 440px;
+    text-align: justify;
+}
+
+.hd {
+    font-size: 21px;
+    text-align: left;
+    margin: 0;
+    font-family: "Kosugi Maru", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color:rgb(206, 147, 173);
+}
+
+
+/* blaalllaal */
