@@ -70,13 +70,14 @@ function initWindow(win) {
 
             target.addEventListener('mousemove', (e) => {
                 const rect = container.getBoundingClientRect();
-                const offset = 4;
+                const offsetX = 20;
+                const offsetY = 50;
 
                 const x = e.clientX - rect.left;
                 const y = e.clientY - rect.top;
 
-                tooltip.style.left = (x + offset) + 'px';
-                tooltip.style.top  = (y + offset) + 'px';
+                tooltip.style.left = (x + offsetX) + 'px';
+                tooltip.style.top  = (y + offsetY) + 'px';
             });
 
             target.addEventListener('mouseleave', () => {

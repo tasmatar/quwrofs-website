@@ -387,6 +387,7 @@ body::before {
 /* tooltip */
 .tooltip-target {
     cursor: url(./cursors/move.cur), help;
+    border-bottom: 1px dotted #cacaca;
 }
 
 .tooltip-target:hover {
@@ -402,6 +403,7 @@ body::before {
     padding: 2px 6px;
     border-radius: 3px;
     font-size: 12px;
+    font-family: "Kosugi Maru", Helvetica Neue, Helvetica, Arial, sans-serif;
     z-index: 5;
 
 }
@@ -479,6 +481,7 @@ body::before {
     line-height: 1.5;
     position: relative;
     overflow-y:scroll;
+      overflow-x: hidden;
 }
 
 /* .aboutme2 {
@@ -561,6 +564,18 @@ body::before {
     background-repeat: no-repeat;
 }
 
+.img10 {
+    background-image: url(./images/catt.gif);
+}
+
+.img11 {
+    background-image: url(./images/cattt.gif);
+}
+
+.img12 {
+    background-image: url(./images/cat.gif);
+}
+
 /* favorites tab */
 .fav {
     padding-left: 30px;
@@ -577,4 +592,88 @@ body::before {
 }
 
 
-/* blaalllaal */
+/* my cat page */
+
+.roundd {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    background-image: radial-gradient(rgb(255, 255, 255) 22%, transparent 28%),
+    radial-gradient(rgb(255, 255, 255) 22%, transparent 28%);
+    background-position: 0px 0px, 10px 10px;
+    background-size: 20px 20px;
+    background-color: rgb(239, 220, 226);
+    border-radius: 50%;
+}
+
+.round {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 230px;
+  height: 230px;
+  background: url(./images/nomnom.png) no-repeat center;
+  background-size: 150px;
+  pointer-events: none;
+  transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.round2 {
+  position: absolute;
+  inset: 0;
+  background: url(./images/frame.png) center/100% 100% no-repeat;
+  pointer-events: none;
+}
+
+.desc {
+    position: absolute;
+    height: 180px;
+    width: 229px;
+    top: 15px;
+    left: 10px;
+    background-color: #fff7f9;
+    border-radius: 7px;
+    border: 15px solid transparent;
+    border-image-source: url(./images/lace-p.png) !important;
+    border-image-slice: 5 !important;
+    border-image-width: 6px !important;
+    border-image-repeat: round !important;
+    border-style: solid;
+    border-image-outset: 2px;
+    font-family: "Kosugi Maru", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #959595;
+    text-align: left;
+        /* line-height: 1.2; */
+}
+
+.desc > p {
+    bottom: 15px;
+    position: relative;
+}
+
+.desch {
+    font-size: 18px;
+    color: #e3b2bb;
+}
+
+.desch1 {
+    font-size: 18px;
+    color: #e3b2bb;
+}
+
+#desc2 {
+    position: absolute;
+    height: 85px;
+    width: 465px;
+    top: 232px;
+}
+
+#desc2 > p {
+    bottom: 26px;
+    line-height: 1;
+}
