@@ -18,9 +18,12 @@ a {
     text-decoration: none;
 }
 
+html {
+        cursor: url(./cursors/default.cur), auto;
+}
+
 body {
     scroll-behavior: smooth !important;
-    cursor: url(./cursors/default.cur), auto;
     background-color: #00000000;
 }
 
